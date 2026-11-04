@@ -1,1 +1,162 @@
-boa sorte camila
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: rgb(241, 237, 218);
+}
+
+main{
+    position: relative;
+   
+}
+
+.header-paralax{
+    background-image: url(https://hpg.com.br/wp-content/uploads/2025/08/praia-grande-quiosques.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+    height: 400px;
+}
+.header-paralax h1{
+    padding: 150px;
+    text-align: center;
+    font-size: 80px;
+    color:rgb(241, 237, 218);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.3s ease;
+    text-shadow: 3px 3px 8px rgba(19, 15, 9, 0.425);;
+    
+}
+
+
+h1:hover{
+    color:  rgb(97, 88, 65);;
+    text-shadow: 3px 3px 8px rgb(19, 15, 9);;
+    letter-spacing: 3px;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(102, 88, 71);
+    font-size: 30px;
+    
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+   
+}
+
+
+
+
+
+main{
+    position: relative;
+}
+
+.botao-central {
+    text-align: center;
+    margin-bottom: 15px;
+    justify-content: center;
+    display: flex;
+}
+
+.botao-link {
+    display: flex;
+    width: 170px;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(97, 88, 65);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    justify-self: center;
+}
+
+.botao-link-ativo {
+    display: flex;
+    width: 170px;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(241, 237, 218);
+    color: rgb(97, 88, 65);
+    border: 4px solid rgb(97, 88, 65);
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    justify-self: center;
+}
+
+.botao-link:hover{
+    transform: translateY(-4px);
+}
+
+.botao-link-ativo:hover{
+    transform: translateY(-4px);
+    text-decoration: underline 1px;
+}
+
+h2{
+   font-size: 40px;
+    color: rgb(97, 88, 65);;
+    text-align: center;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px; 
+    text-align: justify;
+    max-width: 900px;
+    justify-self: center;
+    gap: 10px;
+}
+
+table{
+    border-collapse: collapse; 
+    border-spacing: 0;
+    border-radius: 50px; 
+}
+
+
+th{
+    border: 2px solid rgb(97, 88, 65);
+    color: rgb(97, 88, 65);
+    border-radius: 30px;
+    padding: 10px;
+    border-radius: 50px; 
+     
+}
+
+td{
+    border: 2px solid rgb(97, 88, 65);;
+    border-radius: 50px; 
+     width: 300px;
+}
+
+.demograf{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+caption{
+    text-align: justify;
+}
+
+footer{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.363);
+    font-size: 18px;
+}

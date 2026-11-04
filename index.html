@@ -1,48 +1,57 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Baixada Santista</title>
+
   <link rel="stylesheet" href="style.css">
+ 
 </head>
+<script src="a.js"></script>
 <body>
-  <header>
-    <h1>Baixada Santista</h1>
-    <nav aria-label="Municípios da Baixada Santista">
-      <a href="bertioga.html">Bertioga</a>
-      <a href="cubatao.html">Cubatão</a>
-      <a href="guaruja.html">Guarujá</a>
-      <a href="itanhaem.html">Itanhaém</a>
-      <a href="mongagua.html">Mongaguá</a>
-      <a href="peruibe.html">Peruíbe</a>
-      <a href="praia_grande.html">Praia Grande</a>
-      <a href="santos.html">Santos</a>     
-      <a href="sao_vicente.html">São Vicente</a>
-    </nav>
+  <header class="header-paralax">
+    <h1>
+       Baixada Santista
+    </h1>
   </header>
+  <div class="botao-central">
+    <nav aria-label="Municípios da Baixada Santista">
+      <a href="index.html" class="botao-link-ativo">Início</a>
+      <a href="bertioga.html" class="botao-link-ativo">Bertioga </a>
+      <a href="cubatao.html" class="botao-link-ativo">Cubatão </a>
+      <a href="guaruja.html" class="botao-link-ativo">Guarujá</a>
+      <a href="itanhaem.html" class="botao-link-ativo">Itanhaém</a>
+      <a href="mongagua.html" class="botao-link-ativo">Mongaguá</a>
+      <a href="peruibe.html" class="botao-link-ativo">Peruíbe</a>
+      <a href="praia_grande.html" class="botao-link-ativo">Praia Grande</a>
+      <a href="santos.html" class="botao-link-ativo">Santos</a>     
+      <a href="sao_vicente.html" class="botao-link-ativo">São Vicente</a>
+    </nav>
+    </div>
   <main>
+    <br><br>
     <section aria-labelledby="sobre-regiao">
-      <div>
-        <img src="img/jardins-da-orla-da-praia.jpg" width="500" height="340" alt="Jardim da orla" />
-      </div>
-      <div>
         <h2 id="sobre-regiao">A região</h2>
-        <ul>
-          <li>Abriga o principal ponto de escoamento da produção brasileira, o Porto de Santos;</li>
-          <li>Está estrategicamente situada a menos de 100 km da capital São Paulo e das indústrias da região do ABC;</li>
-          <li>Possui excelentes conexões de transporte viário (Sistema Anchieta - Imigrantes e Rodovia Manuel da Nóbrega).</li>
-        </ul>
-        <p>A Região Metropolitana da Baixada Santista está localizada no litoral paulista sendo sede do
+        <div class="texto"><br>
+        <p>
+          Abriga o principal ponto de escoamento da produção brasileira, o Porto de Santos;
+          Está estrategicamente situada a menos de 100 km da capital São Paulo e das indústrias da região do ABC;
+          Possui excelentes conexões de transporte viário (Sistema Anchieta - Imigrantes e Rodovia Manuel da Nóbrega).<br>
+        </p>
+        <p>
+          A Região Metropolitana da Baixada Santista está localizada no litoral paulista sendo sede do
           Porto de Santos, o maior e mais importante complexo portuário da América do Sul, em torno do qual se desenvolve
           a economia regional. É a região paulista que possui o menor número de municípios (nove), ocupando apenas 1% do
-          território estadual, e a segunda maior densidade demográfica do Estado.</p>
-      </div>
+          território estadual, e a segunda maior densidade demográfica do Estado.
+        </p>
+        </div>
     </section>
-    <section aria-labelledby="comparativo-demografico">
+    <br><br>
+    <section class="demograf" aria-labelledby="comparativo-demografico">
       <h2 id="comparativo-demografico">Comparativo demográfico</h2>
+      <p class="texto">População estimada em 2025 e área dos municípios da Baixada Santista:</p>
       <table>
-        <caption>População estimada em 2025 e área dos municípios da Baixada Santista</caption>
         <thead>
           <tr>
             <th scope="col">Cidade</th>
@@ -63,18 +72,21 @@
         </tbody>
       </table>
     </section>
+    <br><br>
     <section aria-labelledby="transporte">
       <h2 id="transporte">Transporte</h2>
-      <p>A região está situada a menos de 100 km da capital São Paulo e das indústrias da região do ABC, além
-        de possuir excelentes conexões de transporte viário através do Sistema Anchieta - Imigrantes, Rodovia Manuel da
+      <p class="texto">A região está situada a menos de 100 km da capital São Paulo e das indústrias da região do ABC, além
+        de possuir excelentes conexões de transporte viário através do Sistema Anchieta - Imigrantes, Rodovia Manuel da 
         Nóbrega e a BR-101 (que liga a Baixada Santista ao município do Rio de Janeiro), duas linhas ferroviárias que
         atravessam todo o Estado de São Paulo desembocam no Porto de Santos, interligando a região a municípios importantes
         como São Paulo, Campinas, Bauru e Araraquara. O Porto de Santos faz a conexão de cargas e passageiros com o resto do
         Brasil e com o mundo.</p>
     </section>
   </main>
+  <br><br>
   <footer>
-    <p>Feito por: André Silva, Camila Martinez, João Gabriel e Antony José</p>
+    <p>&copy; Feito por: André Silva, Camila Martinez, João Gabriel e Antony José</p>
   </footer>
+  
 </body>
 </html>
