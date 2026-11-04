@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guarujá - Baixada Santista</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="header-paralax">
     <h1>Guarujá - Baixada Santista</h1>
   </header>
   <main>
@@ -15,46 +16,49 @@
       <section aria-labelledby="historia-guaruja">
         <h2 id="historia-guaruja">História</h2>
         <div>
-          <img src="img/guaruja.jpg" height="600" alt="Paisagem de Guarujá">
-    <div>
-      <p>A origem de Guarujá (em tupi-guarani, "viveiro de guarus", "peixe de
+          <div class="d-flex justify-content-center">
+            <img src="img/guaruja.jpg" class="img-fluid rounded-4" alt="Praia" width="400px">
+            </div><br><br>
+      <p class="texto">A origem de Guarujá (em tupi-guarani, "viveiro de guarus", "peixe de
         água doce") remonta a 1534, com a doação, pelo rei de Portugal D. João III a Pero Lopes de Souza, de uma ilha
         denominada pelos índios de Guaibê, ou Guaimbé, a "ilha do sol", posteriormente chamada de Ilha de Santo Amaro.</p>
-      <p>A fixação de colonos em suas terras foi, inicialmente, prejudicada por sua conformação montanhosa e proximidade
+      <p class="texto">A fixação de colonos em suas terras foi, inicialmente, prejudicada por sua conformação montanhosa e proximidade
         de outros núcleos mais importantes. Apesar disso, a Ilha de Santo Amaro sempre desempenhou papel estratégico no
         sistema de defesa da baixada santista.</p>
-      <p>Em 1584, iniciou-se a construção da fortaleza da Barra Grande, no extremo sul da ilha. São de 1660 as primeiras
+      <p class="texto">Em 1584, iniciou-se a construção da fortaleza da Barra Grande, no extremo sul da ilha. São de 1660 as primeiras
         referências à fortaleza de Itapema, localizada no bairro atual de Vicente de Carvalho.</p>
-      <p>Já o Forte de São Felipe, construído no extremo norte da ilha, na Ponta da Armação, para cruzar fogo com o forte
+      <p class="texto">Já o Forte de São Felipe, construído no extremo norte da ilha, na Ponta da Armação, para cruzar fogo com o forte
         São João da Bertioga, datava de 1552. E foi palco da aventura do artilheiro alemão Hans Staden, prisioneiro dos
         índios tamoios.</p>
     </div>
     <div>
-    <p>Todos os três fortes foram sendo reformulados ao longo dos anos e, de
+    <p class="texto">Todos os três fortes foram sendo reformulados ao longo dos anos e, de
       todos, restaram vestígios importantes. No entanto, somente nas primeiras décadas do século XX, a cidade de Guarujá
       passou a se desenvolver como vila balneária, época em que Elias Fausto Pacheco Jordão mandou vir da Geórgia,
       Estados Unidos, 46 chalés de madeira desmontados, iniciando a construção de um hotel, uma igreja e um cassino.</p>
-    <p>Tornou-se distrito do município de Santos em 26 de outubro de 1922 e, em 30 de dezembro de 1926, foi criada a
+    <p class="texto">Tornou-se distrito do município de Santos em 26 de outubro de 1922 e, em 30 de dezembro de 1926, foi criada a
       prefeitura sanitária de Guarujá, extinta cinco anos depois pelo então interventor federal no Estado de São Paulo.
     </p>
-    <p>Guarujá foi reconduzida à condição de distrito de Santos em 23 de janeiro de 1931 e só retomou sua autonomia em 30
+    <p class="texto">Guarujá foi reconduzida à condição de distrito de Santos em 23 de janeiro de 1931 e só retomou sua autonomia em 30
       de junho de 1934, quando foi reconhecida oficialmente como estância balneária.</p>
     </div>
         </div>
       </section>
     </article>
-    <nav aria-label="Navegação entre municípios">
-      <a href="index.html">Início</a>
-      <a href="bertioga.html">Bertioga</a>
-      <a href="cubatao.html">Cubatão</a>
-      <a href="guaruja.html" aria-current="page">Guarujá</a>
-      <a href="itanhaem.html">Itanhaém</a>
-      <a href="mongagua.html">Mongaguá</a>
-      <a href="peruibe.html">Peruíbe</a>
-      <a href="praia_grande.html">Praia Grande</a>
-      <a href="santos.html">Santos</a>
-      <a href="sao_vicente.html">São Vicente</a>
-    </nav>
+    <div class="botao-central">
+      <nav aria-label="Navegação entre municípios">
+          <a href="index.html" class="botao-link-ativo">Início</a>
+          <a href="bertioga.html" aria-current="page" class="botao-link-ativo">Bertioga</a>
+          <a href="cubatao.html" class="botao-link-ativo">Cubatão</a>
+          <a href="guaruja.html" class="botao-link-ativo">Guarujá</a>
+          <a href="itanhaem.html" class="botao-link-ativo">Itanhaém</a>
+          <a href="mongagua.html" class="botao-link-ativo">Mongaguá</a>
+          <a href="peruibe.html" class="botao-link-ativo">Peruíbe</a>
+          <a href="praia_grande.html" class="botao-link-ativo">Praia Grande</a>
+          <a href="santos.html" class="botao-link-ativo">Santos</a>
+          <a href="sao_vicente.html" class="botao-link-ativo">São Vicente</a>
+      </nav>
+      </div>
   </main>
   <footer>
     <p>Feito por: André Silva, Camila Martinez, João Gabriel e Antony José</p>
