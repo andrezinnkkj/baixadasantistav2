@@ -22,11 +22,18 @@ main{
     width: 100%;
     position: relative;
     height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header-paralax h1{
-    padding: 150px;
+    width: 100%;
+    max-height: 100%;
+    padding: clamp(1rem, 4vw, 2rem);
     text-align: center;
-    font-size: 80px;
+    font-size: clamp(1.5rem, 6vw, 4rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
     color:rgb(241, 237, 218);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transition: all 0.3s ease;
@@ -36,7 +43,7 @@ main{
 
 
 h1:hover{
-    color:  rgb(97, 88, 65);;
+    color:  rgb(204, 201, 185);
     text-shadow: 3px 3px 8px rgb(19, 15, 9);;
     letter-spacing: 3px;
 }
@@ -116,13 +123,15 @@ h2{
 }
 
 .texto{
-    display: flex;
-    flex-direction: column;
+    width: 90%;
     font-size: 20px; 
     text-align: justify;
-    max-width: 900px;
-    justify-self: center;
-    gap: 10px;
+    margin-inline: auto;
+}
+
+.contador{
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
 table{
@@ -144,7 +153,8 @@ th{
 td{
     border: 2px solid rgb(97, 88, 65);;
     border-radius: 50px; 
-     width: 300px;
+    width: 300px;
+    padding: 10px;
 }
 
 .demograf{
@@ -215,6 +225,7 @@ p, a, button, input, textarea, select, th, td {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    flex-wrap: nowrap;
 }
 
 .sidebar.ativo {

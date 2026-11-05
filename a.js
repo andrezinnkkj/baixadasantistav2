@@ -33,6 +33,7 @@ const observador = new IntersectionObserver((entradas) => {
 const elemento = entrada.target;
 const valorFinal = Number(elemento.dataset.valor);
 const decimais = Number(elemento.dataset.decimais) || 0;
+const agrupar = elemento.dataset.agrupar !== "false";
 const duracao = 1000;
 const inicio = performance.now();
 
@@ -43,14 +44,16 @@ const valorAtual = valorFinal * progresso;
 
     elemento.textContent = valorAtual.toLocaleString("pt-BR", {
         minimumFractionDigits: decimais,
-        maximumFractionDigits: decimais
+        maximumFractionDigits: decimais,
+        useGrouping: agrupar
                 });
                 if (tempoPassado < 1) {
                     requestAnimationFrame(atualizar);
                 } else {
     elemento.textContent = valorFinal.toLocaleString("pt-BR", {
         minimumFractionDigits: decimais,
-        maximumFractionDigits: decimais
+        maximumFractionDigits: decimais,
+        useGrouping: agrupar
                     });
                 }
             }
